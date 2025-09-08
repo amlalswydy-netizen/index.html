@@ -2,6 +2,7 @@
 <html lang="ar">  
 <head>  
   <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>شركة شفاكو للأدوية</title>  
   <style>
     body {
@@ -78,6 +79,48 @@
       padding: 10px;
       background: #1e3a8a;
       color: white;
+    }
+    form {
+      margin: 20px auto;
+      width: 80%;
+      max-width: 500px;
+      background: #e0f2fe;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(30, 58, 138, 0.3);
+      text-align: right;
+      direction: rtl;
+    }
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #1e3a8a;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #1e40af;
+      border-radius: 6px;
+      font-size: 16px;
+      font-family: inherit;
+      resize: vertical;
+    }
+    form button {
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+    form button:hover {
+      background-color: #f59e0b;
     }
   </style>
 </head>  
@@ -201,9 +244,10 @@
   <hr> 
 
   <h2><u>📸 صور لشركة شفاكو للأدوية</u></h2>
-  <img src="https://www.facebook.com/photo.php?fbid=2987639384597455&id=653955591299191&set=a.2996691950358865" alt="صورة المنتج">  
-  <img src="https://www.facebook.com/Shaphaco/" alt="صورة المنتج">   
-
+  <div>
+  <img src="https://tse1.mm.bing.net/th/id/OIP.kbzMzl1o8lQfnZ-bd5IuwwHaE5?r=0&cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3"  width="400" height="200"  alt="صورة المنتج">  
+  <img src="https://5.imimg.com/data5/HS/GE/MY-2638356/img_7848-500x500.jpg" width="400" height="200" alt="صورة المنتج">   
+  </div>
   <hr>  
 
   <h2><u>💊 موقع الشركة</u></h2>
@@ -217,7 +261,23 @@
   <h2><u>📞 اتصل بنا</u></h2>
   <p>الهاتف: 200620 10</p>  
   <p>الجوال: +967 71200620</p>
-  <p>البريد الإلكتروني: <a href="mailto:marketing@shaphaco.net">marketing@shaphaco.net</a></p>  
+  <p>البريد الإلكتروني: <a href="mailto:marketing@shaphaco.net">marketing@shaphaco.net</a></p>
+
+  <hr>
+
+  <h2><u>💬 تواصل معنا</u></h2>
+  <form id="contactForm" action="#" method="post">
+    <label for="name">الاسم</label>
+    <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+    
+    <label for="email">البريد الإلكتروني</label>
+    <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+    
+    <label for="message">الرسالة</label>
+    <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا" required></textarea>
+    
+    <button type="submit">إرسال</button>
+  </form>
 
   <footer>
     <p>© جميع الحقوق محفوظة لدى امل السويدي</p>
@@ -225,5 +285,3 @@
 
 </body>
 </html>
-
-# index.html
